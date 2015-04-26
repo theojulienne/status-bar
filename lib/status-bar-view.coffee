@@ -5,6 +5,7 @@ Tile = require './tile'
 class StatusBarView extends HTMLElement
   createdCallback: ->
     @classList.add('status-bar')
+    @setAttribute('role', 'contentinfo')
 
     flexboxHackElement = document.createElement('div')
     flexboxHackElement.classList.add('flexbox-repaint-hack')
